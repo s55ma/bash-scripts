@@ -32,4 +32,5 @@ vikunja                        Stack   db0404f3d75d   nginx_vikunja             
 vikunja                        Stack   77777cc24e76   vikunja                        Up 2 days
 vikunja                        Stack   ec76c9d7f1a0   vikunja-db                     Up 2 days (healthy)
 vikunja                        Stack   77efad5e394e   diun                           Up 2 days
+Total Running Containers: 27
 ```
