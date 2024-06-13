@@ -2,7 +2,7 @@
 
 If you have multiple users and each is running it's own rootless daemon, you can check all running containers from all users and count them.
 
-```
+```bash
 root@docker-servers-vlan:~# ll /home/
 total 40
 drwxr-xr-x 10 root        root        4096 Jun 13 19:41 ./
@@ -18,7 +18,7 @@ drwxr-x---  9 vikunja     vikunja     4096 Jun 11 19:08 vikunja/
 ```
 **Script output:**
 
-```
+```bash
 root@docker-servers-vlan:~# ./running_containers.sh
 USER                           TYPE    CONTAINER_ID   NAME                           STATUS
 homarr                         Stack   31444004f924   diun                           Up 2 hours
