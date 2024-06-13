@@ -1,6 +1,6 @@
 # Check and count running rootless Docker containers
 
-If you have multiple users and each is running it's own rootless daemon, you can check all running containers from all users and count them.
+If you have multiple users and each is running it's own rootless daemon, you can check all running containers from all users and count them. In my case, users are named the same as containers.
 
 ```bash
 root@docker-servers-vlan:~# ll /home/
