@@ -1,6 +1,6 @@
 # Check and count running rootless Docker containers
 
-If you have multiple users and each is running it's own rootless daemon, you can check all running containers from all users and count them. In my case, users are named the same as containers. There is variable called ```EXCLUDED_USER```. This is used for users that are not running Docker, usually this is your default sudo user. If you need to exclude more than one user, use ```EXCLUDED_USER="user1\|user2\|user3```
+If you have multiple users and each is running it's own rootless daemon, you can check all running containers from all users and count them. In my case, users are named the same as containers. There is variable called ```EXCLUDED_USER```. This is used for users that are not running Docker, usually this is your default sudo user. If you need to exclude more than one user, use ```EXCLUDED_USER="user1\|user2\|user3"```
 
 ```bash
 root@docker-servers-vlan:~# ll /home/
