@@ -4,7 +4,11 @@
 EXCLUDED_USER="s55ma"
 
 # Get the list of users from /home excluding the EXCLUDED_USER
-USER_LIST=$(ls /home | grep -v "$EXCLUDED_USER")
+if [ -n "$EXCLUDED_USER" ]; then
+    USER_LIST=$(ls /home | grep -v "$EXCLUDED_USER")
+else
+    USER_LIST=$(ls /home)
+fi
 
 # Red color code
 RED='\033[0;31m'
