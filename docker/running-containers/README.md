@@ -3,6 +3,22 @@
 If you have multiple users and each is running it's own rootless daemon, you can check all running containers from all users and count them.
 
 ```
+root@docker-servers-vlan:~# ll /home/
+total 40
+drwxr-xr-x 10 root        root        4096 Jun 13 19:41 ./
+drwxr-xr-x 24 root        root        4096 May 23 22:00 ../
+drwxr-x--- 10 homarr      homarr      4096 Jun 13 19:02 homarr/
+drwxr-x---  9 linkwarden  linkwarden  4096 Jun 11 18:24 linkwarden/
+drwxr-x---  4 s55ma       s55ma       4096 Jun  4 16:07 marc/
+drwxr-x--- 20 netbox      netbox      4096 Jun 11 17:54 netbox/
+drwxr-x--- 10 oxidized    oxidized    4096 Jun 11 17:25 oxidized/
+drwxr-x---  8 uptime-kuma uptime-kuma 4096 Jun 11 19:36 uptime-kuma/
+drwxr-x---  7 vaultwarden vaultwarden 4096 Jun 11 18:57 vaultwarden/
+drwxr-x---  9 vikunja     vikunja     4096 Jun 11 19:08 vikunja/
+```
+**Script output:**
+
+```
 root@docker-servers-vlan:~# ./running_containers.sh
 USER                           TYPE    CONTAINER_ID   NAME                           STATUS
 homarr                         Stack   31444004f924   diun                           Up 2 hours
